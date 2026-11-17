@@ -10,18 +10,15 @@ The ecosystem is open to hardware from different manufacturers. Participate in o
 
 ## Open-source development and free firmware adaptations
 
-The **CANmeleon phased open-source plan** develops reusable USB-CAN/CAN FD hardware designs and collaboration resources. The free firmware adaptation program serves selected open-source USB-CAN/CAN FD boards; availability is specific to the board revision, firmware and version.
+[CANmeleon Hardware](https://github.com/CANmeleon/canmeleon-hardware) is the GitHub home for open-source USB-CAN/CAN FD hardware designs and board documentation. Hardware materials are being organized there, with project discussions and contributions open to developers and manufacturers.
 
-| Project or program | Scope and access |
+| What you need | Where to go |
 | --- | --- |
-| [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware) | Open-source hardware initiative, contribution guidelines and component release manifest. |
-| [Dual-channel reference hardware](https://gitee.com/sysmax/canmeleon-hardware/tree/master/hardware/dual-channel) | Planned reference design; follow the project for design releases. |
-| [Multi-channel reference hardware](https://gitee.com/sysmax/canmeleon-hardware/tree/master/hardware/multi-channel) | Planned reference design; follow the project for design releases. |
-| [Free firmware adaptation requests](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md) | Submit the open-source project URL, board revision, MCU, USB/CAN peripherals and desired firmware/API to request an adaptation. |
+| Hardware designs and board documentation | [canmeleon-hardware](https://github.com/CANmeleon/canmeleon-hardware) |
+| Contribute a design or propose a board | [Contribution guide](https://github.com/CANmeleon/canmeleon-hardware/blob/main/CONTRIBUTING.md) · [Hardware project proposals](https://github.com/CANmeleon/canmeleon-hardware/issues/new?template=hardware_project.md) |
+| Free firmware adaptation for an open-source board | [Submit an adaptation request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md) with the project URL, board revision, MCU, USB/CAN peripherals and desired firmware/API. |
 
-Use the [hardware release manifest](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml) to find released components and their versions. Hardware designs and firmware have separate licenses; free binary firmware and open-source firmware describe different forms of access. Follow each component's license and package instructions.
-
-[Contribute hardware designs or documentation](https://gitee.com/sysmax/canmeleon-hardware/blob/master/CONTRIBUTING.md) · [Discuss open-source hardware](https://gitee.com/sysmax/canmeleon-hardware/issues)
+The free adaptation program applies to selected board and firmware combinations. Hardware design files and firmware carry their respective licenses; follow the instructions for the specific project and package.
 
 ## Commercial services
 
@@ -59,7 +56,7 @@ CANmeleon firmware runs on hardware with a matching CANmeleon firmware port. The
 
 **Is CANmeleon tied to one hardware manufacturer?** CANmeleon is a USB-CAN/CAN FD ecosystem for multiple hardware and chip vendors. Existing adaptations are examples; manufacturers can bring their own products and platforms for integration.
 
-**What can I get through the open-source program?** Follow CANmeleon-Hardware for reference designs, component releases and contribution opportunities. The project directory identifies planned designs, while the release manifest identifies available components.
+**Where can I find hardware projects and contribute?** Start with the CANmeleon Hardware repository on GitHub. Its README links project documentation, contribution instructions and hardware proposals. Board-specific files and revisions are organized in that repository.
 
 **Which firmware adaptations are free?** The program covers selected open-source hardware and firmware combinations. Submit your board's project URL, revision and desired firmware through the adaptation request form to establish the applicable package and access terms.
 
@@ -70,6 +67,6 @@ CANmeleon firmware runs on hardware with a matching CANmeleon firmware port. The
 ## Contact and participate
 
 - **Commercial solutions, chip porting/maintenance and custom firmware:** [len2slaw@foxmail.com](mailto:len2slaw@foxmail.com).
-- **Open-source hardware and free adaptation:** [contribute to CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware) or [submit an adaptation request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md).
+- **Open-source hardware and free adaptation:** [contribute to CANmeleon Hardware](https://github.com/CANmeleon/canmeleon-hardware) or [submit an adaptation request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md).
 - **Firmware support and feature requests:** [firmware issue tracker](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues). Include the board, firmware, driver, software/API and reproduction steps.
 - **Device Manager support:** [client issue tracker](https://github.com/CANmeleon/canmeleon-device-manager/issues) for installation, detection, updates or recovery.

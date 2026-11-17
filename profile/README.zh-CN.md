@@ -10,18 +10,15 @@ CANmeleon 面向硬件厂商、芯片厂商和开发者，致力于满足**汽�
 
 ## 开源建设与免费固件适配
 
-**CANmeleon 分阶段开源计划**围绕可复用的 USB-CAN/CAN FD 硬件方案与协作资料展开。免费固件适配计划面向部分开源 USB-CAN/CAN FD 板卡，适用范围按板卡修订、固件及版本分别确定。
+[CANmeleon Hardware](https://github.com/CANmeleon/canmeleon-hardware) 是 GitHub 上的 USB-CAN/CAN FD 开源硬件项目入口，用于汇集设计文件与板卡资料。硬件内容正在仓库中整理，欢迎开发者和制造商参与项目讨论与贡献。
 
-| 项目或计划 | 内容与获取方式 |
+| 你的需求 | 入口 |
 | --- | --- |
-| [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware) | 开源硬件计划、贡献指南与组件发布清单。 |
-| [双通道参考硬件](https://gitee.com/sysmax/canmeleon-hardware/tree/master/hardware/dual-channel) | 筹备中的参考设计，可关注项目获取设计发布。 |
-| [多通道参考硬件](https://gitee.com/sysmax/canmeleon-hardware/tree/master/hardware/multi-channel) | 筹备中的参考设计，可关注项目获取设计发布。 |
-| [免费固件适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md) | 提供开源项目链接、板卡修订、MCU、USB/CAN 外设及目标固件/API，申请适配。 |
+| 硬件设计与板卡资料 | [canmeleon-hardware](https://github.com/CANmeleon/canmeleon-hardware/blob/main/README.zh-CN.md) |
+| 贡献设计或提出板卡方案 | [贡献指南](https://github.com/CANmeleon/canmeleon-hardware/blob/main/CONTRIBUTING.md#中文) · [硬件项目提案](https://github.com/CANmeleon/canmeleon-hardware/issues/new?template=hardware_project.md) |
+| 为开源板卡申请免费固件适配 | [提交适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)，提供项目链接、板卡修订、MCU、USB/CAN 外设及目标固件/API。 |
 
-通过[硬件发布清单](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml)查阅已发布组件及版本。硬件设计与固件分别采用各自的许可；免费二进制固件与开源固件是不同的获取形式，使用时遵循对应组件的许可证和固件包说明。
-
-[贡献硬件设计与文档](https://gitee.com/sysmax/canmeleon-hardware/blob/master/CONTRIBUTING.md) · [参与开源硬件讨论](https://gitee.com/sysmax/canmeleon-hardware/issues)
+免费适配计划面向部分板卡与固件组合。硬件设计文件与固件分别采用对应的许可，使用时查看具体项目和固件包说明。
 
 ## 商业技术服务
 
@@ -59,7 +56,7 @@ CANmeleon 固件运行于已完成 CANmeleon 固件适配的硬件。所选固�
 
 **CANmeleon 绑定某一家硬件厂商吗？** CANmeleon 是面向多家硬件与芯片厂商的 USB-CAN/CAN FD 生态平台。现有适配产品作为案例展示，厂商可携自有产品与平台参与集成。
 
-**开源计划可以获取哪些内容？** 通过 CANmeleon-Hardware 关注参考设计、组件发布与协作机会。项目目录列明筹备中的设计，发布清单列明可获取的组件。
+**在哪里查看硬件项目并参与贡献？** 从 GitHub 上的 CANmeleon Hardware 仓库开始，README 提供项目资料、贡献说明和硬件提案入口，各板卡文件及修订在该仓库中整理。
 
 **哪些固件适配免费？** 免费适配计划覆盖部分开源硬件与固件组合。可通过适配申请表提交板卡项目链接、修订版本及所需固件，确认适用包和获取条件。
 
@@ -70,6 +67,6 @@ CANmeleon 固件运行于已完成 CANmeleon 固件适配的硬件。所选固�
 ## 联系与参与
 
 - **商业方案、芯片移植维护、定制固件：** [len2slaw@foxmail.com](mailto:len2slaw@foxmail.com)。
-- **开源硬件与免费适配：** [参与 CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware)，或[提交适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)。
+- **开源硬件与免费适配：** [参与 CANmeleon Hardware](https://github.com/CANmeleon/canmeleon-hardware)，或[提交适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)。
 - **固件支持与功能建议：** [固件问题入口](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)，附板卡、固件、驱动、软件/API 和复现步骤。
 - **设备管理器支持：** [客户端问题入口](https://github.com/CANmeleon/canmeleon-device-manager/issues)，用于安装、识别、更新与恢复问题。
