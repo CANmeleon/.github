@@ -1,26 +1,47 @@
-# CANmeleon — USB-CAN / CAN FD 方案平台
+# CANmeleon — USB-CAN / CAN FD 生态平台
 
-**让每一种 USB-CAN / CAN FD 需求，都有解决方案的起点。**
+**连接硬件、芯片、固件与软件，让每一种 USB-CAN / CAN FD 需求都有解决方案的起点。**
 
-CANmeleon 汇集 USB 转 CAN 硬件、固件、软件兼容指南和集成资源。我们的目标是满足一切有关 USB-CAN/CAN FD 的需求：从选择一款适配器，到 OEM 集成、定制固件开发，以及向自有硬件移植。
+CANmeleon 面向硬件厂商、芯片厂商和开发者，致力于满足**汽车、工业、机器人、船舶和自动化**等行业的 USB-CAN/CAN FD 需求。
 
-无论是**汽车、工业、机器人、船舶还是自动化**，都欢迎从实际应用出发，在这里寻找已有方案，或提出下一步需要解决的问题。
+生态面向不同厂商的硬件开放。你可以参与开源硬件建设、为开源板卡申请免费固件适配，也可以围绕自己的产品或芯片平台，与我们开展商业固件方案合作。
 
-[English](https://github.com/CANmeleon/.github/blob/main/profile/README.md) · [官网](https://canmeleon.com/) · [支持硬件](https://canmeleon.com/zh/firmware/devices/) · [固件下载](https://github.com/CANmeleon/canmeleon-usb-can-firmware/blob/main/README.zh-CN.md#下载与安装) · [设备管理器](https://github.com/CANmeleon/canmeleon-device-manager/blob/main/README.zh-CN.md)
+[English](https://github.com/CANmeleon/.github/blob/main/profile/README.md) · [官网](https://canmeleon.com/) · [固件下载](https://github.com/CANmeleon/canmeleon-usb-can-firmware/blob/main/README.zh-CN.md#下载与安装) · [设备管理器](https://github.com/CANmeleon/canmeleon-device-manager/blob/main/README.zh-CN.md) · [商业联系](mailto:len2slaw@foxmail.com)
 
-## 从你的需求开始
+## 开源建设与免费固件适配
 
-| 你需要什么 | 从这里开始 |
+**CANmeleon 分阶段开源计划**围绕可复用的 USB-CAN/CAN FD 硬件方案与协作资料展开。免费固件适配计划面向部分开源 USB-CAN/CAN FD 板卡，适用范围按板卡修订、固件及版本分别确定。
+
+| 项目或计划 | 内容与获取方式 |
 | --- | --- |
-| USB-CAN / USB-CAN FD 硬件 | 在[设备目录](https://canmeleon.com/zh/firmware/devices/)选择适配器、模块或控制器芯片，查看对应型号的规格与接线资料。 |
-| OEM 产品集成方案 | 查看[鲲弘硬件与集成资源](https://www.kunhong-elec.com/)，并[沟通 OEM 项目需求](https://www.kunhong-elec.com/contact)。 |
-| 接入现有 CAN 软件 | 按操作系统、驱动与 API，在[固件目录](https://github.com/CANmeleon/canmeleon-usb-can-firmware/blob/main/README.zh-CN.md)选择固件。 |
-| 下载、安装或切换固件 | 获取[固件包与安装说明](https://github.com/CANmeleon/canmeleon-usb-can-firmware/blob/main/README.zh-CN.md#下载与安装)，使用 [CANmeleon 设备管理器](https://github.com/CANmeleon/canmeleon-device-manager/blob/main/README.zh-CN.md)。 |
-| 固件开发或移植到新硬件 | [提交固件开发或移植需求](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)，说明目标 MCU/开发板、USB 接口、CAN 通道、电脑端系统及软件/API。 |
+| [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware) | 开源硬件计划、贡献指南与组件发布清单。 |
+| [双通道参考硬件](https://gitee.com/sysmax/canmeleon-hardware/tree/master/hardware/dual-channel) | 筹备中的参考设计，可关注项目获取设计发布。 |
+| [多通道参考硬件](https://gitee.com/sysmax/canmeleon-hardware/tree/master/hardware/multi-channel) | 筹备中的参考设计，可关注项目获取设计发布。 |
+| [免费固件适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md) | 提供开源项目链接、板卡修订、MCU、USB/CAN 外设及目标固件/API，申请适配。 |
+
+通过[硬件发布清单](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml)查阅已发布组件及版本。硬件设计与固件分别采用各自的许可；免费二进制固件与开源固件是不同的获取形式，使用时遵循对应组件的许可证和固件包说明。
+
+[贡献硬件设计与文档](https://gitee.com/sysmax/canmeleon-hardware/blob/master/CONTRIBUTING.md) · [参与开源硬件讨论](https://gitee.com/sysmax/canmeleon-hardware/issues)
+
+## 商业技术服务
+
+| 服务对象 | 服务内容 | 联系入口 |
+| --- | --- | --- |
+| USB-CAN/CAN FD 硬件厂商 | 提供用于产品集成、电脑端软件接入和设备管理的软件与固件解决方案。 | [硬件产品集成咨询](mailto:len2slaw@foxmail.com?subject=CANmeleon%20hardware%20integration) |
+| 涉及 USB-CAN/CAN FD 应用的芯片厂商 | 为目标芯片平台提供 CANmeleon 系列固件移植与维护服务。 | [芯片平台移植与维护](mailto:len2slaw@foxmail.com?subject=CANmeleon%20chip%20platform%20porting) |
+| 有特定产品需求的团队 | 针对接口、软件工作流及设备功能开发定制固件。 | [定制固件开发咨询](mailto:len2slaw@foxmail.com?subject=CANmeleon%20custom%20firmware) |
+
+来信请说明公司/项目、目标 MCU 或板卡、CAN/CAN FD 通道、USB 接口、电脑端系统及 API、所需功能和计划时间。需要持续维护时，请说明版本维护与支持范围。项目文档和商务资料可通过邮件沟通。
+
+## 商业适配案例：鲲弘 KHCM 芯片及衍生硬件
+
+鲲弘 **KHCM 系列芯片及衍生 USB-CAN/CAN FD 硬件**是 CANmeleon 商业固件适配案例。[设备兼容目录](https://canmeleon.com/zh/firmware/devices/)列出 KHCM102、KH-UCANFD 等型号的可选固件；电气接口、通道及安装要求请查阅对应型号资料。
+
+[KHCM 芯片资料](https://docs.kunhong-elec.com/zh/products/can-communication/CANmeleon-controller-ic.html) · [已适配设备型号](https://canmeleon.com/zh/firmware/devices/) · [咨询你的平台适配](mailto:len2slaw@foxmail.com?subject=CANmeleon%20platform%20adaptation)
 
 ## 按软件选择固件
 
-CANmeleon 固件运行于支持的 CANmeleon 硬件。所选固件决定电脑端驱动与软件接口，硬件决定物理通道及电气能力。选型时核对完整设备型号，以及固件模式、版本和授权要求。
+CANmeleon 固件运行于已完成 CANmeleon 固件适配的硬件。所选固件决定电脑端驱动与软件接口，硬件决定物理通道及电气能力。选型时核对完整设备型号，以及固件模式、版本和授权要求。
 
 | 软件或开发接口 | 固件与使用资料 |
 | --- | --- |
@@ -34,27 +55,21 @@ CANmeleon 固件运行于支持的 CANmeleon 硬件。所选固件决定电脑�
 
 [浏览全部固件系列与参数对照](https://github.com/CANmeleon/canmeleon-usb-can-firmware/blob/main/README.zh-CN.md#按软件需求选择固件)。
 
-## 从一款适配器，到你自己的产品
-
-从需要连接的 CAN 或 CAN FD 网络开始：汽车 ECU、工业控制器、机器人、船舶设备或自动化系统。先明确通道数、总线速率、电气接口、操作系统和软件/API，再搭配硬件与固件。
-
-对于 **OEM 集成**，可向[鲲弘硬件团队](https://www.kunhong-elec.com/contact)说明尺寸、供电与隔离、连接器及预计用量。对于**固件开发和移植**，可在[固件需求入口](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)说明目标开发板或 MCU、USB 与 CAN 外设、电脑端接口，以及更新和恢复要求。
-
 ## 常见问题
 
-**CANmeleon 是什么？** CANmeleon 是 USB-CAN/CAN FD 方案平台，连接硬件选型、固件下载、设备管理、软件集成与定制开发需求。
+**CANmeleon 绑定某一家硬件厂商吗？** CANmeleon 是面向多家硬件与芯片厂商的 USB-CAN/CAN FD 生态平台。现有适配产品作为案例展示，厂商可携自有产品与平台参与集成。
 
-**只面向汽车行业吗？** CANmeleon 面向汽车、工业、机器人、船舶和自动化等领域的 USB-CAN/CAN FD 项目。按安装环境的电气与环境要求选择硬件，并为目标网络选择电脑端软件。
+**开源计划可以获取哪些内容？** 通过 CANmeleon-Hardware 关注参考设计、组件发布与协作机会。项目目录列明筹备中的设计，发布清单列明可获取的组件。
 
-**一款适配器可以接入多种软件生态吗？** 支持设备可通过管理器切换适用的固件系列，每次运行一种。可用模式及可保存固件数量取决于硬件、存储空间和授权。
+**哪些固件适配免费？** 免费适配计划覆盖部分开源硬件与固件组合。可通过适配申请表提交板卡项目链接、修订版本及所需固件，确认适用包和获取条件。
 
-**自有硬件可以使用这些固件吗？** 已发布固件包面向设备目录中的型号。其他开发板或 MCU 可提交移植需求，并提供硬件及电脑端接口要求。
+**已有固件可以直接安装到自有板卡吗？** 已发布包用于其指定的板卡和硬件修订。其他开发板或 MCU 可申请移植，并提供硬件及电脑端接口需求。
 
-**源码与许可证在哪里？** 各组件或发布包分别说明可获取的文件及许可。固件总览和专题仓库提供使用文档、参数数据及二进制下载入口。
+**一款适配器可以接入多种软件生态吗？** 支持设备可切换适用的固件系列，每次运行一种。可用模式及可保存固件数量取决于硬件、存储空间和授权。
 
-## 开始使用与获取支持
+## 联系与参与
 
-- [选择硬件](https://canmeleon.com/zh/firmware/devices/)，[下载固件](https://github.com/CANmeleon/canmeleon-usb-can-firmware/blob/main/README.zh-CN.md#下载与安装)。
-- [反馈固件问题或提出功能需求](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)，附上型号、固件、驱动、软件/API 与复现步骤。
-- [设备管理器问题](https://github.com/CANmeleon/canmeleon-device-manager/issues)：安装、识别、更新与恢复。
-- [联系鲲弘，沟通硬件采购与 OEM 集成](https://www.kunhong-elec.com/contact)。
+- **商业方案、芯片移植维护、定制固件：** [len2slaw@foxmail.com](mailto:len2slaw@foxmail.com)。
+- **开源硬件与免费适配：** [参与 CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware)，或[提交适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)。
+- **固件支持与功能建议：** [固件问题入口](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)，附板卡、固件、驱动、软件/API 和复现步骤。
+- **设备管理器支持：** [客户端问题入口](https://github.com/CANmeleon/canmeleon-device-manager/issues)，用于安装、识别、更新与恢复问题。
